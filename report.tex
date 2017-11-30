@@ -209,13 +209,13 @@ The project can be divided into 2 main phases: semester 1 \& 2; the table below 
     \hline
     \underline{\textbf{SERVOS/MOTORS}} & & \\ 
     \hline
-    \textbf{Tail Plane SERVOS} & 1 &TBC\\ 
+    \textbf{Tail Plane SERVOS} & 1 & 7.99\\ 
     \hline
-    \textbf{Flaps SERVOS} & 1 & TBC\\ 
+    \textbf{Flaps SERVOS} & 1 & 7.99\\ 
     \hline 
-    \textbf{SERVOS Setup} & 1 & TBC\\ 
+    \textbf{SERVOS Setup} & 1 & 7.99\\ 
     \hline
-    \textbf{ECS/Motor} & 1 & TBC\\ 
+    \textbf{ECS/Motor} & 1 & 7.99\\ 
     \hline 
     \underline{\textbf{OPTIONAL COMPONENTS}} & 1 & \\ 
     \hline
@@ -227,7 +227,7 @@ The project can be divided into 2 main phases: semester 1 \& 2; the table below 
     \hline
     \makecell{\textbf{Video Transmitter} \\ \textbf{Battery}} & 1 & 7.95 \\ 
     \hline
-    \textbf{Total} & 1 & 334\\ 
+    \textbf{Total} & 1 & 357.97\\ 
     \hline
     \caption{Avionics Costs}\\
 \end{longtable}
@@ -294,13 +294,27 @@ The project can be divided into 2 main phases: semester 1 \& 2; the table below 
     \caption{Front View of the UAV}
 \end{figure}
 
+
+\begin{figure}[h!]
+    \includegraphics[width=14.5cm, scale=1]{drawing1.png}
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=14.5cm, scale=1]{drawing2.png}
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=14.5cm, scale=1]{drawing3.png}
+    \caption{Engineering Drawings - Dimensions and Position}
+\end{figure}
+
 \noindent It features the stable trainer aircraft characteristics of a high wing, inverse t-tail and single front propeller - all scaled to fit into our design brief. The brief states that no part of the disassembled aircraft can be over $1m$. It was decided that the wing span would be $1.5 m$, constructed out of two parts that would be joined for final assembly and the chord length would be at $0.2m$ to give a favourable aspect ratio of 7.5. The main fuselage extends $0.943m$. \\
 
 \paragraph{B. Optimisation} Once all initial design objectives had been fulfilled, focus was aimed at optimising the design to ensure the best preliminary design possible. The 4 main points that were addressed were the sizing and details of the wing, wing tips, streamlining and the control surfaces. These four points set out to improve the overall performance of the aircraft by tackling the most significant details in the design. The initial drawing and values gave a base to work upon to then refine each part of the aircraft to create the most optimum design. \\
 
 \paragraph{C. Weight Calculations}
 Typical full-scale aircraft weight calculations are based on the empty, fuel, crew and passengers weights. In the case of a small-scale UAV, as the propulsion system is using an electrical motor, those weights are practically equal to zero. Thus, a different approach was required to estimate a maximum take-off weight that shall be used used in all the preliminary design calculations. The typical method used in small-scale aircraft modelling is to consider the mass of the avionics and multiply it by a factor of 2-3 in order to estimate the overall mass of the UAV. The estimated mass of the avionics is expressed in the table below. 
-However, the servos and the motor have not been selected yet. Thus, our mass estimations were based on the average mass experienced by the models designed in previous years as part o this module. Therefore, the maximum take-off mass used in all the preliminary design calculations is $3kg$. \\
+However, the motor has not yet been selected yet. Thus, our mass estimations were based on the average mass experienced by the models designed in previous years as part o this module. Therefore, the maximum take-off mass used in all the preliminary design calculations is $3kg$. \\
 
 \begin{longtable}{ | c | c | c | c |} 
     \hline
@@ -329,11 +343,11 @@ However, the servos and the motor have not been selected yet. Thus, our mass est
     \hline
     \makecell{\textbf{Battery Monitor \textbackslash } \\ \textbf{Alarm 1-8S}} & - & 1 & 8.7 \\ 
     \hline
-    \textbf{Tail Plane SERVOS} & TBC & 1 & TBC \\ 
+    \textbf{Tail Plane SERVOS} & 28 x 12 x 29 & 1 & 17 \\ 
     \hline
-    \textbf{Flaps SERVOS} & TBC & 1 & TBC \\ 
+    \textbf{Flaps SERVOS} & 28 x 12 x 29 & 1 & 17 \\ 
     \hline
-    \textbf{SERVOS Setup} & TBC & 1 & TBC \\ 
+    \textbf{SERVOS Setup} & 28 x 12 x 29 & 1 & 17 \\ 
     \hline
     \textbf{ECS/Motor} & TBC & 1 & TBC \\ 
     \hline
@@ -345,7 +359,7 @@ However, the servos and the motor have not been selected yet. Thus, our mass est
     \hline
     \makecell{\textbf{Video Transmitter} \\ \textbf{Battery}} & 72 x 36 x 19 & 1 & 25 \\ 
     \hline
-    \textbf{Total} & - & - & 495.3\\ 
+    \textbf{Total} & - & - & 546.3\\ 
     \hline
     \caption{Avionics Weight}
 \end{longtable}
@@ -1007,7 +1021,7 @@ C) \textbf{\underline{Carbon Fibre Reinforced Composite: }}\\
 
 \noindent As this is only the initial stage of the design, both approaches are still being considered. The choice of not completely discard the autonomous mode is also reinforced by the fact that it could also be possible to set take-off and landing in auto mode and override the commands (taking manual command), if the aircraft happens to go out of the indicated parameters. \\
 
-\noindent This can be easily done by switching flight modes and simply going back to a stabilized or fly by wire mode. The Futaba T6K allows us to have up to four different flight modes and therefore, at this point by leaving one of the four on autonomous mode, it would still be possible to go back and, at any time, by using the Futaba controller switch, change to "FWBA" and proceed to land or take control of the aircraft, either utilising the "Stabilized mode" or the "FBWB" (fly by wire - which also holds altitude), keeping the plane stable during the mission.[REFERENCING 8] To conclude, the approach taken is to have one of the Flight modes on "Autonomous" with "way points" deciding the path for our mission. Take-off in autonomous flight should not be too risky to design. On the other hand, the landing, given the amount of data and the number of parameters that need fine tuning and testing, might be done using the safer "FBWA" mode. \\
+\noindent This can be easily done by switching flight modes and simply going back to a stabilized or fly by wire mode. The Futaba T6K allows us to have up to four different flight modes and therefore, at this point by leaving one of the four on autonomous mode, it would still be possible to go back and, at any time, by using the Futaba controller switch, change to a different mode and proceed to land or take control of the aircraft, either utilising the "Stabilized mode" or the "FBWA" (fly by wire), keeping the plane stable during the mission.[REFERENCING 8] To conclude, the approach taken is to have one of the Flight modes on "Autonomous" with "way points" deciding the path for our mission. Take-off in autonomous flight should not be too risky to design. On the other hand, the landing, given the amount of data and the number of parameters that need fine tuning and testing, might be done using the safer "FBWA" mode. \\
 
 \noindent The last two channels are left for "Stabilized mode" and "Manual mode" in case the aircraft needs to be quickly recovered from a dangerous situation during the flight. \\
 
@@ -1047,10 +1061,15 @@ C) \textbf{\underline{Carbon Fibre Reinforced Composite: }}\\
 
 \noindent The last components to be inserted into our configuration are optional and they are the External USB port and airspeed sensor, both connected to the I2C splitter board, and this is connected to the Pixhawk powered by the Power module/5000mAh LiPo battery. These are components can be added at a later stage, assuming the budget permits it.[REFERENCING 5] \\
 
+\begin{figure}[h!]
+\includegraphics[width=18cm, scale=1]{Hamzatable.png}
+\caption{Avionics Components and Their Voltages}
+\end{figure}
+
 \section{Conlusions Upon the Preliminary Design}
 
 \textbf{A. Avionics}\\
-\noindent The final design is going to include a solution that makes full use of the capabilities of the Futaba controller. Using all 4 of the flight modes, it will be possible to have one fully autonomous mode, in which   through theoretical calculations, it will be possible to set all the parameters, for auto take-off and landing. At the same time, in order not to incur in any serious flight control problem, 2 of the 4 channels will be equipped with a semi manual mode ("Stabilize" and "Fly By Wire A"), which will make possible to take off and land while being assisted by the autopilot. As the team's plan is to keep the cruise and flight path at altitude fully autonomous (using "Way points"), the 4th mode is going to be left on fully manual, in case of complete break down of the autopilot, or just simply to manually test the different components on the ground.\\
+\noindent The final design is going to include a solution that makes full use of the capabilities of the Futaba controller. Using all 4 of the flight modes, it will be possible to have one fully autonomous mode, in which   through theoretical calculations, it will be possible to set all the parameters, for auto take-off and landing. At the same time, in order not to incur in any serious flight control problem, 2 of the 4 channels will be equipped with a semi manual mode ("Stabilize" and "Fly By Wire A"), which will make possible to take off and land while being assisted by the autopilot. The team's plan is to keep the cruise and flight path at altitude fully autonomous (using "Way points"); the 4th mode is going to be left on fully manual, in case of complete break down of the autopilot, or just simply to manually test the different components on the ground.\\
 
 \noindent For far as the sensors, communication and actuators are concerned, most of the components are ready to be ordered and hopefully soon enough, the components will be available to start testing/programming. Before this can happen, all that is left to do is to finalize the last details and make a final check of compatibility/voltage range between components. Once this is all done, it will be possible to start working with the sensors, making the necessary adjustment to ensure that the hardware and software of the control system is well implemented. As per what regards the type of components that will be used, these have been amply described in the relative sections; now the configurations and wirings has to be analysed in order to prepare for the next step. On a last note, the only board that has to be yet decided upon is the ESC, and while the method to make the decision has already been decided upon and described above, the motor on which this is based, has not yet been fully assessed. This is not a big issue as the first part of the design will focus on creating a stable, radio and video signal between ground station and Pixhawk/UAV, as well as between the Futaba controller and the Pixhawk. Once this will be done, the process can go into its next stage. \\
 
@@ -1111,9 +1130,9 @@ C) \textbf{\underline{Carbon Fibre Reinforced Composite: }}\\
     \label{wood}
 \end{figure}
 
-\noindent \textbf{B} The following drawings represent the engineering drawings of the most recent iteration of the UAV. \\ 
+\noindent \textbf{B} The following drawing represents the engineering drawing of the most recent iteration of the UAV. \\ 
 
-\newpage 
+\newpage
 
 \begin{figure}
 \includepdf{PreliminaryDesignDADA.pdf}
